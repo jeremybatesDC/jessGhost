@@ -45,12 +45,7 @@
 
                 <section class="author">
                     <h4><a href="{{url}}">{{name}}</a></h4>
-
-                    {{#if bio}}
-                        <p>{{bio}}</p>
-                    {{else}}
-                        <p>Read <a href="{{url}}">more posts</a> by this author.</p>
-                    {{/if}}
+                        <p><a target="_blank" href="http://twitter.com/jesserker">@jesserker</a></p>
                     <div class="author-meta">
                         {{#if location}}<span class="author-location icon-location">{{location}}</span>{{/if}}
                         {{#if website}}<span class="author-link icon-link"><a href="{{website}}">{{website}}</a></span>{{/if}}
@@ -69,10 +64,10 @@
                         onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
                         <span>Facebook</span>
                     </a>
-                    <a class="icon-google-plus" href="https://plus.google.com/share?url={{url absolute="true"}}"
+                    <!--<a class="icon-google-plus" href="https://plus.google.com/share?url={{url absolute="true"}}"
                        onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
                         <span>Google+</span>
-                    </a>
+                    </a>-->
                 </section>
 
             </footer>

@@ -675,7 +675,7 @@ margin on the iframe, cause it breaks stuff. */
     font-size: 2.2rem;
     line-height: 1.5em;
     font-weight: 400;
-    font-family: "Lato", serif;
+    /*font-family: "Lato", serif;*/
     letter-spacing: 0;
     /*color: rgba(255,255,255,0.85);*/
     -webkit-font-smoothing: antialiased;
@@ -2361,10 +2361,10 @@ ul.cd-navigation, ol.cd-navigation, #cd-lateral-nav .sub-menu { list-style-type:
    ========================================================================== */
 /*the above statement is pretty fucking stupid*/
 /*here are some overrides*/
+a {color: inherit;}
 h1 {display: block !important;}
-h1,h2,h3,h4,h5,h6 {text-transform: none;}
+h1,h2,h3,h4,h5,h6 {font-family: 'Arvo', 'Helvetica Neue', Arial, Helvetica, sans-serif;text-transform: none;}
 h2.page-description {
-    font-weight: bold;
     font-size: 1.25em;
 }
 .main-header-content h1, .main-header-content h2 {
@@ -2381,6 +2381,10 @@ h2.page-description {
     padding: 0px 30px;
     height: auto;
 }
+
+a.read-more {color:rgba(153,51,102,1);}
 .cd-main-content {padding-top: 0 !important;}
 .scroll-down {display: none;}
 time.post-date {background: transparent;}
+
+.post-template .post {padding-top: 2.5em;}
