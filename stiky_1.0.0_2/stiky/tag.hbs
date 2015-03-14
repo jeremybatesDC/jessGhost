@@ -1,0 +1,28 @@
+{{!< default}}
+{{! The tag above means - insert everything in this file into the {body} of the default.hbs template }}
+
+<header class="pxn is-fixed">
+    <nav class="main-nav clearfix">
+        <a class="back-button icon-arrow-left" href="{{@blog.url}}">{{@blog.title}}</a>
+        <a class="subscribe-button" href="{{@blog.url}}/tag/{{tag.slug}}/rss/">{{tag.name}}</a>
+        {{> socialnav}}
+        <a id="cd-menu-trigger" href="#0"><span class="cd-menu-text">Menu</span><span class="cd-menu-icon"></span></a>
+    </nav>
+</header>
+
+<main class="cd-main-content">
+
+    {{! The main content area on the homepage }}
+    <main class="content" role="main">
+
+        <header class="tag-header">
+            <h1 class="page-title">{{tag.name}}</h1>
+            <h2 class="page-description">A {{pagination.total}}-post collection</h2>
+        </header>
+
+        {{! The tag below includes the post loop - partials/loop.hbs }}
+        {{> "loop"}}
+
+    </main>
+
+<!-- .cd-main-content close in default.hbs -->

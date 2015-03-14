@@ -1,0 +1,62 @@
+{{! Previous/next page links - only displayed on page 2+ }}
+<div class="extra-pagination inner">
+    {{#if pagination}}
+    <section class="pagination-wrapper">
+    {{{pagination}}}
+    </section>
+    {{/if}}
+</div>
+
+{{! Display featured posts at the top }}
+{{#foreach posts}}
+{{#if featured}}
+<article class="{{post_class}} .featured">
+    <header class="post-header">
+        <h2 class="post-title">
+            <span class="featured-img"></span>
+            <a href="{{url}}">{{{title}}}</a>
+        </h2>
+    </header>
+    <section class="post-excerpt">
+    {{content words="0"}}
+        <p>{{excerpt words="30"}} <a class="read-more" href="{{url}}">&raquo;</a></p>
+    </section>
+    <footer class="post-meta">
+        <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMMM YYYY"}}</time>
+        <!-- {{#if author.image}}<img class="author-thumb" src="{{author.image}}" alt="Author image" nopin="nopin" />{{/if}}
+        {{author}} -->
+        {{tags prefix=" on "}}
+        <a class="disqus-comments" href="{{url}}#disqus_thread" data-disqus-identifier="{{id}}">Comments</a>
+    </footer>
+</article>
+{{/if}}
+{{/foreach}}
+
+{{! This is the post loop - each post will be output using this markup }}
+{{#foreach posts}}
+{{#unless featured}}
+<article class="{{post_class}}">
+    <header class="post-header">
+        <h2 class="post-title"><a href="{{url}}">{{{title}}}</a></h2>
+    </header>
+    <section class="post-excerpt">
+    {{content words="0"}}
+        <p>{{excerpt words="30"}} <a class="read-more" href="{{url}}">&raquo;</a></p>
+    </section>
+    <footer class="post-meta">
+        <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMMM YYYY"}}</time> 
+        <!-- {{#if author.image}}<img class="author-thumb" src="{{author.image}}" alt="Author image" nopin="nopin" />{{/if}}
+        {{author}} -->
+        {{tags prefix=" on "}}
+        <a class="disqus-comments" href="{{url}}#disqus_thread" data-disqus-identifier="{{id}}">Comments</a>
+    </footer>
+</article>
+{{/unless}}
+{{/foreach}}
+
+{{!! After all the posts, we have the previous/next pagination links }}
+{{#if pagination}}
+<section class="pagination-wrapper">
+{{{pagination}}}
+</section>
+{{/if}}

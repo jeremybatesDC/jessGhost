@@ -1,0 +1,7 @@
+
+***** Stiky Changelog *****
+
+#### September 1, 2014 - Version 1.0.0
+
+	* First Release
+
