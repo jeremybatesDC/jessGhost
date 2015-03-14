@@ -1,32 +1,23 @@
-
-h1,h2,h3,h4,h5,h6 {
-    text-transform: none;
-}
-
+h1 {display: block !important;}
+h1,h2,h3,h4,h5,h6 {text-transform: none;}
 h2.page-description {
     font-weight: bold;
     font-style: italic;
     text-shadow: 2px 2px #000;
     font-size: 1.25em;
 }
-
+#cd-menu-trigger {display: none;}
 .main-header {
     height: 15em;
     /*margin-bottom: 5.4rem;*/
     background-position: top right;
 }
-
 .main-nav {
-    background-color: rgba(75,75,75,.75);
+    /*background-color: rgba(75,75,75,.75);*/
+    background: transparent;
     padding: 0px 30px;
     height: auto;
 }
-
-.cd-main-content {
-    padding-top: 0 !important;
-}
-
-.scroll-down {
-    display: none;
-}
-
+.cd-main-content {padding-top: 0 !important;}
+.scroll-down {display: none;}
+time.post-date {background: transparent;}
