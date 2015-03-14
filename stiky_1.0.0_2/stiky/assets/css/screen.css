@@ -222,7 +222,7 @@ h4, h5, h6 {
     color: #373d42;
     line-height: 1.15em;
     margin: 0 0 0.3em 0;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Arvo', sans-serif;
         text-transform: uppercase;
         font-weight: 900;
 }
@@ -2365,18 +2365,18 @@ h1 {display: block !important;}
 h1,h2,h3,h4,h5,h6 {text-transform: none;}
 h2.page-description {
     font-weight: bold;
-    font-style: italic;
-    text-shadow: 2px 2px #000;
     font-size: 1.25em;
 }
+.main-header-content h1, .main-header-content h2 {
+    text-shadow: 1px 1px rgba(99,99,99,1);
+}
+
 #cd-menu-trigger {display: none;}
 .main-header {
     height: 15em;
-    /*margin-bottom: 5.4rem;*/
     background-position: top right;
 }
 .main-nav {
-    /*background-color: rgba(75,75,75,.75);*/
     background: transparent;
     padding: 0px 30px;
     height: auto;
