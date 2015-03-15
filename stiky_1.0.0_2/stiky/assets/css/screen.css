@@ -2367,11 +2367,14 @@ h1,h2,h3,h4,h5,h6 {font-family: 'Arvo', 'Helvetica Neue', Arial, Helvetica, sans
 h2.page-description {
     font-size: 1.25em;
 }
+
+#cd-lateral-nav, #cd-menu-trigger {display: none;}
+
+.vertical {vertical-align: bottom;}
 .main-header-content h1, .main-header-content h2 {
     text-shadow: 1px 1px rgba(99,99,99,1);
 }
 
-#cd-lateral-nav, #cd-menu-trigger {display: none;}
 .main-header {
     height: 15em;
     background-position: top right;
