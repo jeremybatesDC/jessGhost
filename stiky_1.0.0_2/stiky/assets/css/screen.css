@@ -263,7 +263,7 @@ a {
     text-decoration: none;
 }
 
-a:hover { color: #9eabb3; }
+a:hover { color: rgba(170,170,170,1); }
 
 p, ul, ol, dl {
     -webkit-font-feature-settings: 'liga' 1, 'onum' 1, 'kern' 1;
@@ -589,7 +589,7 @@ margin on the iframe, cause it breaks stuff. */
     display: inline-block;
     float: left;
     padding: 13px 10px;
-    color: #9eabb3;
+    color: rgba(170,170,170,1);
     text-align: center;
     font-size: 12px;
     text-transform: uppercase;
@@ -803,7 +803,7 @@ body:not(.post-template) .post-title { font-size: 4rem; }
     outline: none;
 }
 
-.post-title a:hover { color: #9eabb3; }
+.post-title a:hover { color: rgba(170,170,170,1); }
 
 .post-excerpt p { margin: 0; }
 
@@ -816,7 +816,7 @@ body:not(.post-template) .post-title { font-size: 4rem; }
     margin: 3rem 0 0.6rem 0;
     font-size: 1.5rem;
     line-height: 2.2rem;
-    color: #9eabb3;
+    color: rgba(170,170,170,1);
 }
 
 .author-thumb {
@@ -970,11 +970,11 @@ body:not(.post-template) .post-title { font-size: 4rem; }
     font-size: 1.4rem;
     line-height: 1;
     font-style: italic;
-    color: #9EABB3;
+    color: rgba(170,170,170,1);
 }
 
 .author-meta a {
-    color: #9EABB3;
+    color: rgba(170,170,170,1);
 }
 .author-meta a:hover {
     color: #111;
@@ -990,7 +990,7 @@ body:not(.post-template) .post-title { font-size: 4rem; }
     text-decoration: none;
 }
 
-.post-footer h4 a:hover { color: #9eabb3; }
+.post-footer h4 a:hover { color: rgba(170,170,170,1); }
 
 /* Drop the share links in the space to the right.
    Doing it like this means it's easier for the author bio
@@ -1241,7 +1241,7 @@ body:not(.post-template) .post-title { font-size: 4rem; }
 }
 
 .dsq-brlink {
-    color: #9eabb3;
+    color: rgba(170,170,170,1);
     font-size: 1.5rem;
 }
 
@@ -1259,7 +1259,7 @@ body:not(.post-template) .post-title { font-size: 4rem; }
     max-width: 780px;
     margin: 0 auto 4.6rem auto;
     font-size: 1.3rem;
-    color: #9EABB3;
+    color: rgba(170,170,170,1);
     text-align: center;
 }
 
@@ -2395,7 +2395,7 @@ time.post-date {background: transparent;}
 .post-template .post {padding-top: 2.5em;}
 .site-footer{position: absolute;bottom: 0;width: 100%;z-index: -1;}
 .back-button {padding: 0;background: rgba(255,255,255,1);}
-
+.back-button:hover{color:rgba(153,51,102,1);}
 
 /*jB queries */
 @media screen and (min-width: 601px){
