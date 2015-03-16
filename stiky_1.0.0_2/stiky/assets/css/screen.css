@@ -2364,16 +2364,12 @@ ul.cd-navigation, ol.cd-navigation, #cd-lateral-nav .sub-menu { list-style-type:
 a {color: inherit;}
 h1 {display: block !important;}
 h1,h2,h3,h4,h5,h6 {font-family: 'Arvo', 'Helvetica Neue', Arial, Helvetica, sans-serif;text-transform: none;}
-h2.page-description {
-    font-size: 1.25em;
-}
+h2.page-description {font-size: 1.25em;}
 
 #cd-lateral-nav, #cd-menu-trigger {display: none;}
 
 .vertical {vertical-align: bottom;}
-.main-header-content h1, .main-header-content h2 {
-    text-shadow: 1px 1px rgba(99,99,99,1);
-}
+.main-header-content h1, .main-header-content h2 {text-shadow: 1px 1px rgba(99,99,99,1);}
 
 .main-header {
     height: 15em;
@@ -2385,6 +2381,7 @@ h2.page-description {
     height: auto;
 }
 
+.post-title a:hover{color:rgba(153,51,102,1);}
 a.read-more {color:rgba(153,51,102,1);}
 
 /* post page*/
@@ -2402,9 +2399,14 @@ time.post-date {background: transparent;}
     #disqus_thread:after{content:' ';display:block;height: 32.5rem; background: rgba(255,255,255,1);position: relative;top:-17.5em;}
 }
 
-@media only screen and (min-width: 1024px) {
+/*@media only screen and (min-width: 1024px) {
 
-}
+}*/
+
+
+
+
+/* twitter widget styles*/
 
 
 [data-expanded-url]{
