@@ -1,0 +1,76 @@
+body {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+  font-weight: 300;
+}
+
+[data-expanded-url]{
+  word-wrap: break-word;
+}
+
+.widget-wrapper {
+  padding: 2em;
+  font-size: 1rem;
+}
+
+.widget-wrapper ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#tw-widget2:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+#tw-widget2 li {
+  width: 90%;
+  margin: 0 auto;
+  float: none;
+}
+
+#tw-widget2 li:nth-child(odd) {
+  background: gray;
+}
+#tw-widget2 li:nth-child(even){
+  background: rgba(153,51,102,.8)
+}
+
+@media (min-width: 768px) {
+  #tw-widget2 li {
+    width: calc(100% / 3);
+    height:10em;
+    float: left;
+  }
+}
+#tw-widget2 a {
+  text-decoration: none;
+}
+
+#tw-widget2 .user {display: none;}
+
+#tw-widget2 .tweet {
+  margin: 0;
+  padding: 10px 20px;
+  color: white;
+}
+#tw-widget2 .tweet a {
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+}
+#tw-widget2 .tweet a[data-scribe="element:url"] {
+  text-decoration: underline;
+}
+#tw-widget2 .tweet a[data-scribe="element:hashtag"] {
+  color: #ecf0f1;
+}
+#tw-widget2 .tweet img[aria-label^="Emoji"] {
+  max-height: 14px;
+}
+#tw-widget2 .timePosted {
+  margin: 0;
+  padding: 0 20px;
+  font-size: 14px;
+  text-align: left;
+}
