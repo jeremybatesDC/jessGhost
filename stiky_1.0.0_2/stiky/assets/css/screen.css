@@ -2393,5 +2393,5 @@ a.read-more {color:rgba(153,51,102,1);}
 time.post-date {background: transparent;}
 .author-image .img {border-radius: 50%;}
 .post-template .post {padding-top: 2.5em;}
-#disqus_thread:after{content:' ';display:block;height: 20rem; background: rgba(255,255,255,1);position: relative;top:-10em;}
+/*#disqus_thread:after{content:' ';display:block;height: 20rem; background: rgba(255,255,255,1);position: relative;top:-10em;}*/
 .site-footer{position: absolute;bottom: 0;width: 100%;}
