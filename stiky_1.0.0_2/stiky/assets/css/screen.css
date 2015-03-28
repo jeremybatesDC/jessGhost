@@ -1847,8 +1847,6 @@ body:not(.post-template) .post-title { font-size: 4rem; }
 
     .subscribe-button { margin-right: 37px; }
 
-    .disqus-comments { display: none; }
-
     span.featured-img,
      .author-template h2.post-title span.featured-img,
     .tag-template h2.post-title span.featured-img { display: none; }
@@ -2395,9 +2393,9 @@ time.post-date {background: transparent;}
 .back-button:hover{color:rgba(153,51,102,1);}
 
 /*jB queries */
-@media screen and (min-width: 601px){
+/*@media screen and (min-width: 601px){
     #disqus_thread:after{content:' ';display:block;height: 32.5rem; background: rgba(255,255,255,1);position: relative;top:-17.5em;}
-}
+}*/
 
 /*@media only screen and (min-width: 1024px) {
 
