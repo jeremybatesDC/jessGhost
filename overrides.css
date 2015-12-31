@@ -9,15 +9,14 @@ h2.page-description {
 #cd-menu-trigger {display: none;}
 .main-header {
     height: 15em;
-    /*margin-bottom: 5.4rem;*/
     background-position: top right;
 }
 .main-nav {
-    /*background-color: rgba(75,75,75,.75);*/
     background: transparent;
-    padding: 0px 30px;
+    padding: 0 30px;
     height: auto;
 }
 .cd-main-content {padding-top: 0 !important;}
 .scroll-down {display: none;}
 time.post-date {background: transparent;}
+.post-content a {text-decoration: underline;}
