@@ -1,0 +1,61 @@
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    {{! Document Settings }}
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    {{! Page Meta }}
+    <title>jesserker</title>
+    <meta name="description" content="{{meta_description}}" />
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="/assets/images/favicon_at_32x32.png">
+
+    {{! Styles'n'Scripts }}
+    <link rel="stylesheet" type="text/css" href="{{asset "css/screen.css"}}" />
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Arvo:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+
+    {{! Ghost outputs important style and meta data with this tag }}
+    {{ghost_head}}
+</head>
+<body class="{{body_class}}">
+
+    {{! Everything else gets inserted here }}
+    {{{body}}}
+
+    {{> footer}}
+
+
+    {{> lateralnav}}    
+
+    {{! Ghost outputs important scripts and data with this tag }}
+    {{ghost_foot}}
+
+    {{! The main JavaScript file for the theme }}
+    <script type="text/javascript" src="{{asset "js/jquery-scrolltofixed-min.js"}}"></script>
+    <script type="text/javascript" src="{{asset "js/index.js"}}"></script>
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+    <script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'morethan140chars'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function () {
+    var s = document.createElement('script'); s.async = true;
+    s.type = 'text/javascript';
+    s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+    (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+    </script>
+    <script src="/assets/js/twitterScript2.js"></script>
+
+</body>
+</html>
