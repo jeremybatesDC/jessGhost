@@ -55,7 +55,7 @@ body{
 
 main {
 	position: relative;
-	max-width: 1024px;
+	max-width: 100rem;
 	margin:0 auto;
 }
 
@@ -68,6 +68,10 @@ h1 {
 	color: #993366;
 }
 
+h2 {
+	font-size: 2.4rem;
+}
+
 p {
 	font-family: 'Roboto Condensed', 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial,sans-serif;
 	line-height: 1.375;
@@ -76,6 +80,24 @@ p {
 
 .tagline {
 	padding-top: .5em;
+}
+
+figcaption {
+	font-family: 'Roboto Condensed', 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial,sans-serif;
+	font-size: 2.4rem;
+}
+
+figcaption a {
+	display: block;
+	padding: 1em;
+	background: #993366;
+	color: #fff;
+	text-decoration: none;
+	transition: all .3333s ease-in-out;
+}
+
+figcaption a:hover {
+	background: #000;
 }
 
 img {
@@ -103,6 +125,13 @@ img {
 }
 
 @media(max-width: 640px){
+	figcaption {
+		position: relative;
+		top: -15rem;
+	}
+	figcaption a {
+		background: #993366;
+	}
 	header {
 		position: absolute;
 		top:0;
@@ -112,7 +141,7 @@ img {
 	h1 {
 		text-shadow: 1px 1px 1px rgba(255,255,255,.95);
 	}
-	.tagline {
+	h2 {
 		color:#fff;
 	}
 	section {
@@ -142,6 +171,11 @@ img {
 	}
 	figure {
 		width:33%;
+		background: #993366;
+		transition: all .3333s ease-in-out;
+	}
+	figure:hover {
+		background: #000;
 	}
 	article {
 		width:66%;
