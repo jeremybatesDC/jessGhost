@@ -54,11 +54,12 @@ body{
 }
 
 main {
+	position: relative;
 	max-width: 1024px;
 	margin:0 auto;
 }
 
-h1, .tagline {
+h1, h2, h3, h4, h5, h6, .tagline {
 	font-family: 'Crete Round', 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial,sans-serif; 
 }
 
@@ -81,10 +82,24 @@ img {
 	max-width: 100%;
 }
 
+.call-to-action h2 {
+	font-size: 2.4rem;
+	margin-bottom: .5em;
+}
+
 .social-icon {
 	width: 4.8rem;
 	/*must specify height because IE*/
 	height: 4.8rem;
+}
+
+.social-icon path {
+	transition: all .3333s ease-in-out;
+}
+
+.social-icon:hover path {
+	fill: #000;
+	transform: scale(.975);
 }
 
 @media(max-width: 640px){
@@ -107,6 +122,18 @@ img {
 		padding: 1.5em;
 		margin-bottom: -15rem;
 	}
+
+	.call-to-action h2 {
+		padding-left: 1em;
+	}
+
+	footer {
+		padding-bottom: 1em;
+	}
+	
+	.social-icon-link {
+		margin-left: 1.5em;
+	}
 }
 
 @media(min-width: 641px){
@@ -121,7 +148,15 @@ img {
 		vertical-align: top;
 		padding-left: 1em;
 	}
+	.bio {
+		padding: 1em 1em 0 0;
+	}
+	footer {
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+	}
+	.social-icon-link {
+		margin-right: 1em;
+	}
 }
-
-
-
