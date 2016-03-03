@@ -68,7 +68,7 @@ h1 {
 	color: #993366;
 }
 
-h2 {
+h2, .tagline {
 	font-size: 2.4rem;
 }
 
@@ -77,6 +77,11 @@ p {
 	line-height: 1.375;
 	color: #000;
 }
+
+.bio p + p {
+	margin-top: .6666em;
+}
+
 
 .tagline {
 	padding-top: .5em;
@@ -89,7 +94,8 @@ figcaption {
 
 figcaption a {
 	display: block;
-	padding: 1em;
+	font-size: 3.6rem;
+	padding: .5em;
 	background: #993366;
 	color: #fff;
 	text-decoration: none;
@@ -98,6 +104,10 @@ figcaption a {
 
 figcaption a:hover {
 	background: #000;
+}
+
+figcaption .at-sign {
+	font-family: 'Crete Round', 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial,sans-serif; 
 }
 
 img {
@@ -141,7 +151,7 @@ img {
 	h1 {
 		text-shadow: 1px 1px 1px rgba(255,255,255,.95);
 	}
-	h2 {
+	h2, .tagline {
 		color:#fff;
 	}
 	section {
@@ -172,10 +182,6 @@ img {
 	figure {
 		width:33%;
 		background: #993366;
-		transition: all .3333s ease-in-out;
-	}
-	figure:hover {
-		background: #000;
 	}
 	article {
 		width:66%;

@@ -1,0 +1,28 @@
+{{!< default}}
+{{! The tag above means - insert everything in this file into the {body} of the default.hbs template }}
+
+<main>
+	<figure>
+		<img src="/content/images/2016/02/jessica_bates.jpg" alt="Jessica Bates"/>
+		<figcaption>
+			<a target="_blank" href="https://twitter.com/jesserker"><span class="at-sign">@</span>jesserker</a>
+		</figcaption>
+	</figure>
+	<article>
+		<header>
+			<h1>Jessica Bates</h1>
+			<!--<h2>@jesserker</h2>-->
+			<p class="tagline">good 'n social</p>
+		</header>
+		<section>
+			<div class="bio">
+				<p>Since 2007, Jessica Bates has run issue-driven digital channels and helped nonprofits leverage social media to achieve tangible results.</p>
+				<p>From establishing the American Lung Association’s twitter presence, to leading the #GivingTuesday campaign while at the United Nations Foundation, Jessica has spent her career helping organizations develop their digital voices.</p>
+				<p>Jessica devotes her free time to reading multiple books per week and indulging the whims of her cat. She lives in the Washington DC area with her husband and said cat.</p>
+			</div>
+		</section>
+		<footer>
+		{{> social}}
+		</footer>
+	</article>
+</main>
