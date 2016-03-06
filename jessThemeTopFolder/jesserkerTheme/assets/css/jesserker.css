@@ -119,7 +119,7 @@ img {
 	font-size: 2.4rem;
 	background-image: url(/assets/images/c0nt4act_m3.svg);
 	background-repeat: no-repeat;
-	background-position: right;
+	background-position: 20rem 50%;
 	background-size: 8.4rem;
 	/*width: 6.4rem;*/
 	min-height: 8.4rem;
@@ -208,11 +208,7 @@ img {
 		padding: 1.5em;
 		margin-bottom: -15rem;
 	}
-
-	.hire-me {
-		background-position: right;
-	}
-
+	
 	footer {
 		padding-bottom: 1em;
 	}
@@ -245,7 +241,6 @@ img {
 	}
 
 	.hire-me {
-		background-position: 66% 50%;
 		padding-top: 1em;
 	}
 
