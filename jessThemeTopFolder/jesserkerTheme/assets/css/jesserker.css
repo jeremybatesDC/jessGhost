@@ -104,7 +104,6 @@ figcaption a {
 
 figcaption a:hover {
 	background: #000;
-	box-shadow: inset 0px -10px 0px 0px rgba(153,51,102,1);
 }
 
 figcaption .at-sign {
@@ -115,9 +114,43 @@ img {
 	max-width: 100%;
 }
 
-.call-to-action h2 {
+.hire-me {
+	font-family: 'Crete Round', 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial,sans-serif;
 	font-size: 2.4rem;
-	margin-bottom: .5em;
+	background-image: url(/assets/images/c0nt4act_m3.svg);
+	background-repeat: no-repeat;
+	background-position: right;
+	background-size: 8.4rem;
+	/*width: 6.4rem;*/
+	min-height: 8.4rem;
+	padding-top: 2em;
+	transition: all .3333s ease-in-out;
+}
+
+.hire-me:hover {
+	transform: scale(.975);
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+}
+
+.hire-me span, .hire-me a {
+	display: block;
+	height: 100%;
+	min-height: 8.4rem;
+}
+
+.hire-me a {
+	color: #993366;
+	transition: all .3333s ease-in-out;
+}
+
+.hire-me a:hover {
+	color: #000;
+}
+
+.hire-me a {
+	text-decoration: none;
+	transition: all .3333s ease-in-out;
 }
 
 .social-icon {
@@ -176,8 +209,8 @@ img {
 		margin-bottom: -15rem;
 	}
 
-	.call-to-action h2 {
-		padding-left: 1em;
+	.hire-me {
+		background-position: right;
 	}
 
 	footer {
@@ -199,7 +232,7 @@ img {
 	}
 	figcaption a:hover {
 		background: #000;
-		box-shadow: inset 0 .5rem 0 0 rgba(153,51,102,1);
+		box-shadow: inset 0 -.5rem 0 0 rgba(153,51,102,1);
 	}
 	article {
 		width:66%;
@@ -210,6 +243,12 @@ img {
 	.bio {
 		padding: 1em 1em 0 0;
 	}
+
+	.hire-me {
+		background-position: 66% 50%;
+		padding-top: 1em;
+	}
+
 	footer {
 		position: absolute;
 		bottom: 0;
@@ -220,16 +259,14 @@ img {
 	}
 }
 
-
 @media(min-width: 641px) and (max-width:767px){
-	.bio {
-		font-size: 1.5rem;
+	html {
+		font-size: 9px;
 	}
 }
 
-
 @media(min-width: 1024px){
-	.bio {
-		font-size: 1.7rem;
+	html {
+		font-size: 11px;
 	}
 }
