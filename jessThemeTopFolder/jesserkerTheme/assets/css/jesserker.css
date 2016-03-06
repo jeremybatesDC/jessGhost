@@ -87,6 +87,15 @@ p {
 	margin-top: .6666em;
 }
 
+figure img {
+	transition: all .3333s ease-in-out;
+}
+
+figure:hover img {
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+}
+
 figcaption {
 	font-family: 'Roboto Condensed', 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial,sans-serif;
 	font-size: 2.4rem;
@@ -242,6 +251,7 @@ img {
 
 	.hire-me {
 		padding-top: 1em;
+		background-position: 20rem 0;
 	}
 
 	footer {
