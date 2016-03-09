@@ -225,6 +225,9 @@ img {
 	.social-icon-link {
 		margin-left: 1.5em;
 	}
+	.social-icon-link:first-child {
+		margin-left: 1.25em;
+	}
 }
 
 @media(min-width: 641px){
@@ -257,10 +260,12 @@ img {
 	footer {
 		position: absolute;
 		bottom: 0;
-		width: 100%;
 	}
 	.social-icon-link {
 		margin-right: 1em;
+	}
+	.social-icon-link:first-child {
+		margin-right: .6666em;
 	}
 }
 
